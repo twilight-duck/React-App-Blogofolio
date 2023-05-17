@@ -5,6 +5,8 @@ import { UserInfo } from './components/UserInfo/UserInfo';
 import { Typography } from './components/Typography/Typography';
 import { BurgerMenu } from './components/BurgerMenu/BurgerMenu';
 import { Tabs } from './components/Tabs/Tabs';
+import { Form } from './components/Form/Form';
+import { Card } from './components/Card/Card'
 
 function App() {
 
@@ -28,7 +30,8 @@ function App() {
       <Typography content='Test' type='textPrimary'/>
       <Typography content='Test' type='textSecondary'/>
       <BurgerMenu />
-      <Tabs />
+      <Tabs/>
+      <Form/>
     </div>
   );
 }
