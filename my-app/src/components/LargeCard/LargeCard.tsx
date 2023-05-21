@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { CardDate } from '../CardDate/CardDate';
 import '../LargeCard/LargeCard.scss';
 import { Typography } from '../Typography/Typography';
-
+import { CardActions } from "../CardActions/CardActions";
 
 
 
@@ -31,6 +31,7 @@ export const LargeCard: FC<ILargeCard> =  ({id, image, text, date, title}) => {
                     </div>
                 </div>
             </div>
+            <CardActions/>
         </div>
     )
 }

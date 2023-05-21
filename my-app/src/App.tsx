@@ -7,6 +7,9 @@ import { BurgerMenu } from './components/BurgerMenu/BurgerMenu';
 import { Tabs } from './components/Tabs/Tabs';
 import { Form } from './components/Form/Form';
 import { Card } from './components/Card/Card'
+import { CardList } from './components/CardsList/CardsList';
+import { PageTemplate } from "./components/PageTemplate/PageTemplate";
+import { SignUp } from './pages/SignUp/SignUp';
 
 function App() {
 
@@ -16,22 +19,9 @@ function App() {
 
   return (
     <div className="app">
-      <Button type = 'primary' content = 'Click me' isDisabled = {false} onClick = {handleClick}/>
-      <Button type = 'secondary' content = 'Click me' isDisabled = {false} onClick = {handleClick}/>
-      <Button type = 'primary' content = 'Click me' isDisabled = {false} onClick = {handleClick}/>
-      <Button type = 'secondary2' content = 'Click me' isDisabled = {false} onClick = {handleClick}/>
-      <Button type = 'primary' content = 'Click me' isDisabled = {false} onClick = {handleClick}/>
-      <Button type = 'secondary' content = 'Click me' isDisabled = {true} onClick = {handleClick}/>
-      <UserInfo userName='Andrzjei Sapkowski'/>
-      <Typography content='Test' type='H1'/>
-      <Typography content='Test' type='H2'/>
-      <Typography content='Test' type='H3'/>
-      <Typography content='Test' type='subline'/>
-      <Typography content='Test' type='textPrimary'/>
-      <Typography content='Test' type='textSecondary'/>
-      <BurgerMenu />
-      <Tabs/>
-      <Form/>
+      <PageTemplate>
+        <SignUp/>
+      </PageTemplate>
     </div>
   );
 }
