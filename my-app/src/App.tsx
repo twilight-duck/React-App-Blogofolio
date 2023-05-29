@@ -10,6 +10,13 @@ import { Card } from './components/Card/Card'
 import { CardList } from './components/CardsList/CardsList';
 import { PageTemplate } from "./components/PageTemplate/PageTemplate";
 import { SignUp } from './pages/SignUp/SignUp';
+import { RegistrationConfirmation } from './pages/RegistrationConfirmation/RegistrationConfirmation';
+import { RegistrationSuccess } from "./pages/RegistrationSuccess/RegistrationSuccess";
+import { SignIn } from './pages/SignIn/SignIn';
+import { SelectedPosts } from './pages/SelectedPosts/SelectedPosts';
+import { BlogPage } from './pages/BlogPage/BlogPage';
+
+
 
 function App() {
 
@@ -20,7 +27,7 @@ function App() {
   return (
     <div className="app">
       <PageTemplate>
-        <SignUp/>
+       <BlogPage/>
       </PageTemplate>
     </div>
   );

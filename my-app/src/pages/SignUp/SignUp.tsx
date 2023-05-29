@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import { Button } from '../../components/Button/Button';
 import { Input } from '../../components/Input/Input';
 import { Typography } from '../../components/Typography/Typography';
 import './SignUp.scss';
@@ -25,6 +26,10 @@ export const SignUp: FC= () => {
 
     const handleChangeConfirmPassword= (newValue: string) => {
         setConfirmPassword(newValue);
+    }
+
+    const handleSubmit = () => {
+        console.log('Форма отправляется на сервер');
     }
 
     return (
@@ -56,6 +61,7 @@ export const SignUp: FC= () => {
                 value={confirmPassword}
                 handleChange={handleChangeConfirmPassword}
             />
+            <Button content='Sign Up' onClick={handleSubmit} type='primary'/>
                 <p className='sign-up-form-description'>
                     Already have an account? {' '}
                     <a className='sign-up form-link' href="https://example.com">

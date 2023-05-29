@@ -3,13 +3,13 @@ import { PrimaryExpression } from 'typescript';
 import './Button.scss';
 
 interface IButton {
-    isDisabled: boolean;
+    isDisabled?: boolean;
     type: 'primary' | 'secondary' | 'secondary2';
     content: string;
     onClick: () => void;
 }
 
-export const Button: FC<IButton> = ({content, isDisabled, onClick, type}) => {
+export const Button: FC<IButton> = ({content, isDisabled = false, onClick, type}) => {
 
     const buttonClass = `button button--${type} ${isDisabled ? 'disabled' : 'active'}`
 

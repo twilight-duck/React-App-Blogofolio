@@ -1,4 +1,4 @@
-.sign-up {
+.sign-in {
     margin-top: 72px;
     margin-bottom: 72px;
 
@@ -17,6 +17,10 @@
             line-height: 20px;
             font-weight: 500;
             color: #8D8E97;
+        }
+
+        &-reset_password{
+            margin-top: -20px;
         }
 
         &-link {
